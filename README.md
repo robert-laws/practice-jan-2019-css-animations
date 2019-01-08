@@ -1,4 +1,4 @@
-## CSS Animations
+# CSS Animations
 
 :coffee: coding practice - january 2019
 
