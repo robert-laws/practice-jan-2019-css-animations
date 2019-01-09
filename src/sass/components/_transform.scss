@@ -1,67 +1,40 @@
-.col {
-  display: flex;
-  flex-direction: column;
-  flex: 1;
+.one {
+  background-color: lighten($color-highlight, 1%);
+  transform: translate(20px, 10px);
+}
 
-  .box {
-    display: flex;
-    align-items: center;
-    border: 1px solid #BBB;
-    margin: 2rem;
-  
-    .transform {
-      flex: 0 0 20rem;
-  
-      p {
-        margin: 1rem;
-        color: $color-white;
-        font-size: 1.6rem;
-      }
+.two {
+  background-color: lighten($color-highlight, 7%);
+  transform: translateY(15px);
+}
 
-      p:first-child {
-        color: #000;
-      }
-    }
-  }
+.three {
+  background-color: lighten($color-highlight, 14%);
+  transform: translateX(100px);
+}
 
-  .one {
-    background-color: lighten($color-highlight, 1%);
-    transform: translate(20px, 10px);
-  }
+.four {
+  background-color: lighten($color-highlight, 21%);
+  transform: scale(1.35);
+}
 
-  .two {
-    background-color: lighten($color-highlight, 7%);
-    transform: translateY(15px);
-  }
+.five {
+  background-color: darken($color-highlight-2, 1%);
+  transform: scaleX(2);
+}
 
-  .three {
-    background-color: lighten($color-highlight, 14%);
-    transform: translateX(100px);
-  }
+.six {
+  background-color: darken($color-highlight-2, 4%);
+  transform: rotate(-15deg);
+}
 
-  .four {
-    background-color: lighten($color-highlight, 21%);
-    transform: scale(1.35);
-  }
-  
-  .five {
-    background-color: darken($color-highlight-2, 1%);
-    transform: scaleX(2);
-  }
+.seven {
+  background-color: darken($color-highlight-2, 8%);
+  transform: skew(15deg, 10deg);
+}
 
-  .six {
-    background-color: darken($color-highlight-2, 4%);
-    transform: rotate(-15deg);
-  }
-
-  .seven {
-    background-color: darken($color-highlight-2, 8%);
-    transform: skew(15deg, 10deg);
-  }
-
-  .eight {
-    background-color: darken($color-highlight-2, 12%);
-    transform: skewY(-10deg);
-  }
+.eight {
+  background-color: darken($color-highlight-2, 12%);
+  transform: skewY(-10deg);
 }
 
