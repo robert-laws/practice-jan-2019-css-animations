@@ -1,0 +1,14 @@
+.test-area {
+  display: flex;
+  align-items: center;
+  height: 110rem;
+  
+  .css-content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #CCC;
+    display: flex;
+    flex-direction: row;
+  }
+}

@@ -1,4 +1,32 @@
-extends layouts/default.pug
+extends layouts/example.pug
 
 block content
-  
+  .css-content
+    .col
+      .box
+        .transform.one 
+          p one
+          p {transform: translateX(100px);}
+      .box
+        .transform.two
+          p two
+          p transform: translateY(25px);
+      .box
+        .transform.three
+          p three
+      .box
+        .transform.four
+          p four
+    .col
+      .box
+        .transform.five 
+          p five
+      .box
+        .transform.six
+          p six
+      .box
+        .transform.seven
+          p seven
+      .box
+        .transform.eight
+          p eight
