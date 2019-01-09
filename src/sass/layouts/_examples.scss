@@ -1,7 +1,17 @@
 .test-area {
   display: flex;
-  align-items: center;
-  height: 110rem;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 100%;
+
+  h1 {
+    margin: 1rem 0 3rem;
+  }
+
+  h2 {
+    margin: 0 0 3rem;
+    color: #777;
+  }
   
   .css-content {
     position: relative;

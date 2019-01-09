@@ -1,32 +1,40 @@
 extends layouts/example.pug
 
 block content
+  h1 Transform Property - Basic Usage
+  h2 ex. transform: { translate(10px, 20px); }
   .css-content
     .col
       .box
         .transform.one 
           p one
-          p {transform: translateX(100px);}
+          p translate(20px, 10px);
       .box
         .transform.two
           p two
-          p transform: translateY(25px);
+          p translateY(15px);
       .box
         .transform.three
           p three
+          p translateX(100px);
       .box
         .transform.four
           p four
+          p scale(1.35);
     .col
       .box
         .transform.five 
           p five
+          p scaleX(2);
       .box
         .transform.six
           p six
+          p rotate(-15deg);
       .box
         .transform.seven
           p seven
+          p skew(15deg, 10deg);
       .box
         .transform.eight
           p eight
+          p skewY(-10deg);

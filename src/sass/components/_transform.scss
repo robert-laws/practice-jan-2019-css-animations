@@ -7,11 +7,10 @@
     display: flex;
     align-items: center;
     border: 1px solid #BBB;
+    margin: 2rem;
   
     .transform {
-      flex: 0 0 15rem;
-      height: 15rem;
-      margin: 10rem;
+      flex: 0 0 20rem;
   
       p {
         margin: 1rem;
@@ -27,36 +26,42 @@
 
   .one {
     background-color: lighten($color-highlight, 1%);
-    transform: translateX(100px);
+    transform: translate(20px, 10px);
   }
 
   .two {
     background-color: lighten($color-highlight, 7%);
-    transform: translateY(25px);
+    transform: translateY(15px);
   }
 
   .three {
     background-color: lighten($color-highlight, 14%);
+    transform: translateX(100px);
   }
 
   .four {
     background-color: lighten($color-highlight, 21%);
+    transform: scale(1.35);
   }
   
   .five {
-    background-color: lighten($color-primary, 1%);
+    background-color: darken($color-highlight-2, 1%);
+    transform: scaleX(2);
   }
 
   .six {
-    background-color: lighten($color-primary, 4%);
+    background-color: darken($color-highlight-2, 4%);
+    transform: rotate(-15deg);
   }
 
   .seven {
-    background-color: lighten($color-primary, 8%);
+    background-color: darken($color-highlight-2, 8%);
+    transform: skew(15deg, 10deg);
   }
 
   .eight {
-    background-color: lighten($color-primary, 12%);
+    background-color: darken($color-highlight-2, 12%);
+    transform: skewY(-10deg);
   }
 }
 
