@@ -93,8 +93,6 @@ div.pictures {
 
 **Transform-Origin** - [Code Page](/src/sass/components/_transform-origin.scss)
 
-Transform-origin 
-
 ```css
 /* transform-origin - default behavoir is to rotate an object around it's center */
 div {
