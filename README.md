@@ -22,7 +22,7 @@ Inspired by the Medium post - [A Guide to CSS Animation](https://codeburst.io/a-
 
 **Translate**
 
-[Code Page](/blob/master/src/sass/components/_transform.scss)
+[Code Page](/src/sass/components/_transform.scss)
 
 ```css
 /* translation functions accepts a length or percentage value */
