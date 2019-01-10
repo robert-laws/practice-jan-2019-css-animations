@@ -1,40 +1,41 @@
-.one {
-  background-color: lighten($color-highlight, 1%);
-  transform: translate(20px, 10px);
-}
+.transform {
+  &.one {
+    background-color: lighten($color-highlight, 1%);
+    transform: translate(20px, 10px);
+  }
 
-.two {
-  background-color: lighten($color-highlight, 7%);
-  transform: translateY(15px);
-}
+  &.two {
+    background-color: lighten($color-highlight, 7%);
+    transform: translateY(15px);
+  }
 
-.three {
-  background-color: lighten($color-highlight, 14%);
-  transform: translateX(100px);
-}
+  &.three {
+    background-color: lighten($color-highlight, 14%);
+    transform: translateX(100px);
+  }
 
-.four {
-  background-color: lighten($color-highlight, 21%);
-  transform: scale(1.35);
-}
+  &.four {
+    background-color: lighten($color-highlight, 21%);
+    transform: scale(1.35);
+  }
 
-.five {
-  background-color: darken($color-highlight-2, 1%);
-  transform: scaleX(2);
-}
+  &.five {
+    background-color: darken($color-highlight-2, 1%);
+    transform: scaleX(2);
+  }
 
-.six {
-  background-color: darken($color-highlight-2, 4%);
-  transform: rotate(-15deg);
-}
+  &.six {
+    background-color: darken($color-highlight-2, 4%);
+    transform: rotate(-15deg);
+  }
 
-.seven {
-  background-color: darken($color-highlight-2, 8%);
-  transform: skew(15deg, 10deg);
-}
+  &.seven {
+    background-color: darken($color-highlight-2, 8%);
+    transform: skew(15deg, 10deg);
+  }
 
-.eight {
-  background-color: darken($color-highlight-2, 12%);
-  transform: skewY(-10deg);
+  &.eight {
+    background-color: darken($color-highlight-2, 12%);
+    transform: skewY(-10deg);
+  }
 }
-

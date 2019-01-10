@@ -2,6 +2,7 @@ main {
   flex: 1;
   margin: 3rem auto;
   min-width: 120rem;
+  display: flex;
 
   @media screen and (max-width: 1200px) {
     padding: 0 2rem;

@@ -1,0 +1,6 @@
+.transition {
+  &.one {
+    align-self: flex-start;
+    background-color: lighten($color-highlight, 1%);
+  }
+}
