@@ -20,7 +20,7 @@
   }
 
   &.five {
-    background-color: darken($color-highlight-2, 1%);
+    background-color: darken($color-highlight, 1%);
     transform: scaleX(2);
   }
 
@@ -37,5 +37,40 @@
   &.eight {
     background-color: darken($color-highlight-2, 12%);
     transform: skewY(-10deg);
+  }
+
+  &.nine {
+    background-color: darken($color-highlight-2, 12%);
+    transform: perspective(100px) rotateX(30deg);
+  }
+
+  &.ten {
+    background-color: darken($color-highlight-2, 12%);
+    transform: perspective(100px) rotateY(-33deg);
+  }
+
+  &.eleven {
+    background-color: darken($color-highlight-3, 1%);
+    transform: perspective(200px) rotate3d(0, 1, 0, 45deg);
+  }
+
+  &.twelve {
+    background-color: darken($color-highlight-3, 4%);
+    transform: perspective(200px) rotate3d(1, -0.5, 1, 33deg);
+  }
+
+  &.thirteen {
+    background-color: darken($color-highlight-3, 8%);
+    transform: perspective(200px) rotate3d(1,1,0,45deg)
+  }
+
+  &.fourteen {
+    background-color: darken($color-highlight-3, 12%);
+    transform: skew(25deg, 15deg);
+  }
+
+  &.fifteen {
+    background-color: darken($color-highlight-3, 15%);
+    transform: rotate(0.125turn);
   }
 }

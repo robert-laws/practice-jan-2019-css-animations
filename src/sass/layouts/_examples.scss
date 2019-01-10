@@ -9,7 +9,7 @@
   }
 
   h2 {
-    margin: 0 0 3rem;
+    margin: -2rem 0 3rem;
     color: #777;
   }
   
@@ -20,6 +20,7 @@
     border: 1px solid #CCC;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
   }
 
   .col {

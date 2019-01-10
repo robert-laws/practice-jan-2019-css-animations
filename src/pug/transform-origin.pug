@@ -1,0 +1,23 @@
+extends layouts/example.pug
+
+block content
+  h1 Transform-Origin Property - Basic Usage
+  .css-content
+    .col
+      .box
+        .transform-origin.one 
+          p one
+          p transform-origin: 0 100%;
+      .box
+        .transform-origin.two 
+          p one
+          p transform-origin: 0 0;
+    .col
+      .box
+        .transform-origin.three 
+          p one
+          p transform-origin: right bottom;
+      .box
+        .transform-origin.four 
+          p one
+          p transform-origin: 0 center;

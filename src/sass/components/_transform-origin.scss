@@ -1,0 +1,33 @@
+.transform-origin {
+  &.one {
+    height: 200px;
+    width: 200px;
+    background-color: lighten($color-highlight, 1%);
+    transform: rotate(5deg);
+    transform-origin: 0 100%;
+  }
+
+  &.two {
+    height: 200px;
+    width: 200px;
+    background-color: lighten($color-highlight-2, 1%);
+    transform: rotate(5deg);
+    transform-origin: 0 0;
+  }
+
+  &.three {
+    height: 200px;
+    width: 200px;
+    background-color: lighten($color-highlight-3, 1%);
+    transform: rotate(5deg);
+    transform-origin: right bottom;
+  }
+
+  &.four {
+    height: 200px;
+    width: 200px;
+    background-color: lighten($color-highlight, 5%);
+    transform: rotate(5deg);
+    transform-origin: 0 center;
+  }
+}
