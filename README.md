@@ -20,9 +20,7 @@ Inspired by the Medium post - [A Guide to CSS Animation](https://codeburst.io/a-
 
 ## Transform
 
-**Translate**
-
-[Code Page](/src/sass/components/_transform.scss)
+**Translate** - [Code Page](/src/sass/components/_transform.scss)
 
 ```css
 /* translation functions accepts a length or percentage value */
@@ -39,7 +37,7 @@ aside {
 }
 ```
 
-**Scale**
+**Scale** - [Code Page](/src/sass/components/_transform.scss)
 
 ```css
 /* scale functions accept a number value */
@@ -56,7 +54,7 @@ div.picture {
 }
 ```
 
-**Rotate**
+**Rotate** - [Code Page](/src/sass/components/_transform.scss)
 
 Rotation occurs as a flat 2 dimensions without using changing the perspective unless this is specified as with using the perspective() function.
 
@@ -71,7 +69,7 @@ h3 {
 }
 ```
 
-**Perspective**
+**Perspective** - [Code Page](/src/sass/components/_transform.scss)
 
 Perspective is needed for elements that are transformed in 3D space. Lower numbers result in more extreme perspective versus higher numbers.
 
@@ -90,6 +88,36 @@ div {
 /* perspective as a property */
 div.pictures {
   perspective: 400px;
+}
+```
+
+**Transform-Origin** - [Code Page](/src/sass/components/_transform-origin.scss)
+
+Transform-origin 
+
+```css
+/* transform-origin - default behavoir is to rotate an object around it's center */
+div {
+  transform-origin: 0 100%;
+  transform: rotate(45deg);
+}
+```
+
+**Transform-Style** - [Code Page](/src/sass/components/_transform-style.scss)
+
+```css
+/* transform-style - either the values flat or preserve-3d */
+div {
+  transform: perspective(300px) rotateX(25deg);
+  transform-style: preserve-3d;
+}
+```
+
+```css
+/* perspective-origin - defining the point where the sight lines convere */
+div {
+  perspective: 500px;
+  perspective-origin: 0 10%;
 }
 ```
 

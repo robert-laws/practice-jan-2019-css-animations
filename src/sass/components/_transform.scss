@@ -51,7 +51,7 @@
 
   &.eleven {
     background-color: darken($color-highlight-3, 1%);
-    transform: perspective(200px) rotate3d(0, 1, 0, 45deg);
+    transform: perspective(200px) rotate3d(0, 1, 0, 15deg);
   }
 
   &.twelve {

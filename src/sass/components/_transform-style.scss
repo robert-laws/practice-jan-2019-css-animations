@@ -1,6 +1,7 @@
 .box {
   &.pbox {
     perspective: 500px;
+    perspective-origin: 0 10%;
   }
 }
 
