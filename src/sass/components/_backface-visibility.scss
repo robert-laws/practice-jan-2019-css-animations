@@ -3,7 +3,7 @@
     width: 500px;
     height: 375px;
     border: 1px solid $color-black;
-    background: url(/images/house.jpg);
+    background: url(../images/house.jpg);
   }
 }
 
@@ -12,7 +12,7 @@
     width: 500px;
     height: 375px;
     border: 1px solid $color-black;
-    background: url(/images/house.jpg);
+    background: url(../images/house.jpg);
     backface-visibility: hidden;
     transition: transform 0.2s;
 
