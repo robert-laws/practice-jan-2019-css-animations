@@ -9,20 +9,20 @@ var browserSync = require("browser-sync").create();
 var paths = {
   styles: {
     src: "src/sass/**/*.scss",
-    dest: "build/styles"
+    dest: "docs/styles"
   },
   pug: {
     src: "src/pug/*.pug",
     watch: "src/pug/**/*.pug",
-    dest: "build"
+    dest: "docs"
   },
   scripts: {
     src: "src/js/**/*.js",
-    dest: "build/scripts"
+    dest: "docs/scripts"
   },
   images: {
     src: ["src/img/**/*.jpg", "src/img/**/*.JPG", "src/img/**/*.png", "src/img/**/*.ico", "src/img/**/*.json"],
-    dest: "build/images"
+    dest: "docs/images"
   }
 }
 
@@ -35,7 +35,7 @@ var prefixerOptions = {
 };
 
 gulp.task('clean', function() {
-  return del(['build']);
+  return del(['docs']);
 });
 
 gulp.task('pug', function() {
@@ -72,7 +72,7 @@ gulp.task('images', function() {
 gulp.task('browser', function() {
   browserSync.init({
     server: {
-      baseDir: "./build"
+      baseDir: "./docs"
     }
   });
 
@@ -90,7 +90,7 @@ gulp.task('browser', function() {
   // Reload when html changes
   gulp.watch(paths.images.src, { usePolling: true, interval: 250 }, gulp.parallel('images'))
     .on('change', browserSync.reload);
-})
+});
 
 gulp.task('serve', gulp.series('clean',
   gulp.parallel(

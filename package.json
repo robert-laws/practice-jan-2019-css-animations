@@ -4,7 +4,8 @@
   "description": "CSS Animations",
   "main": "gulpfile.js",
   "scripts": {
-    "default": "gulp default"
+    "default": "gulp default",
+    "clean": "gulp clean"
   },
   "repository": {
     "type": "git",
