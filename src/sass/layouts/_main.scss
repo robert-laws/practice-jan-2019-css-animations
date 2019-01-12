@@ -4,6 +4,10 @@ main {
   min-width: 120rem;
   display: flex;
 
+  &.introduction {
+    flex-direction: column;
+  }
+
   @media screen and (max-width: 1200px) {
     padding: 0 2rem;
     min-width: 100%;

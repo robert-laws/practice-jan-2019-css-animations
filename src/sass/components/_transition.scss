@@ -1,6 +1,29 @@
 .transition {
   &.one {
+    height: 15rem;
+    width: 15rem;
     align-self: flex-start;
     background-color: lighten($color-highlight, 1%);
+    transition: background-color 1s ease-in;
+
+    &:hover {
+      background-color: $color-highlight-2;
+    }
+  }
+
+  &.two {
+    height: 15rem;
+    width: 15rem;
+    background-color: lighten($color-highlight-2, 5%);
+    transition-property: transform;
+    transition-duration: 750ms;
+    transition-timing-function: ease-in;
+    transition-delay: 500ms;
+
+    &:hover {
+      transform: rotate(360deg);
+      transform-origin: center center;
+    }
   }
 }
+

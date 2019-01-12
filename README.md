@@ -125,7 +125,22 @@ div {
 
 ## Transition
 
-transition
+**Transition** - 
+
+```css
+/* transitions are applied to elements using transition properties */
+div {
+  transition-property: transform;
+  transition-duration: 200ms;
+  transition-timing-function: ease-in;
+  transition-delay: 50ms;
+}
+
+div:hover {
+  transform: rotate(360deg)
+  transform-origin: center center;
+}
+```
 
 ## Keyframes
 
