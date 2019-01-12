@@ -20,7 +20,7 @@ Inspired by the Medium post - [A Guide to CSS Animation](https://codeburst.io/a-
 
 ## Transform
 
-**Translate** - [Code Page](/src/sass/components/_transform.scss)
+**Translate** - [Sass Code Page](/src/sass/components/_transform.scss) & [Online Example](https://robert-laws.com/practice-jan-2019-css-animations/transform.html)
 
 ```css
 /* translation functions accepts a length or percentage value */
@@ -37,7 +37,7 @@ aside {
 }
 ```
 
-**Scale** - [Code Page](/src/sass/components/_transform.scss)
+**Scale** - [Code Page](/src/sass/components/_transform.scss) & [Online Example](https://robert-laws.com/practice-jan-2019-css-animations/transform.html)
 
 ```css
 /* scale functions accept a number value */
@@ -54,7 +54,8 @@ div.picture {
 }
 ```
 
-**Rotate** - [Code Page](/src/sass/components/_transform.scss)
+**Rotate** - [Code Page](/src/sass/components/_transform.scss) & [Online Example](https://robert-laws.com/practice-jan-2019-css-animations/transform.html)
+
 
 Rotation occurs as a flat 2 dimensions without using changing the perspective unless this is specified as with using the perspective() function.
 
@@ -69,7 +70,8 @@ h3 {
 }
 ```
 
-**Perspective** - [Code Page](/src/sass/components/_transform.scss)
+**Perspective** - [Code Page](/src/sass/components/_transform.scss) & [Online Example](https://robert-laws.com/practice-jan-2019-css-animations/transform.html)
+
 
 Perspective is needed for elements that are transformed in 3D space. Lower numbers result in more extreme perspective versus higher numbers.
 
@@ -91,7 +93,8 @@ div.pictures {
 }
 ```
 
-**Transform-Origin** - [Code Page](/src/sass/components/_transform-origin.scss)
+**Transform-Origin** - [Code Page](/src/sass/components/_transform-origin.scss) & [Online Example](https://robert-laws.com/practice-jan-2019-css-animations/transform-origin.html)
+
 
 ```css
 /* transform-origin - default behavoir is to rotate an object around it's center */
@@ -101,7 +104,8 @@ div {
 }
 ```
 
-**Transform-Style** - [Code Page](/src/sass/components/_transform-style.scss)
+**Transform-Style** - [Code Page](/src/sass/components/_transform-style.scss) & [Online Example](https://robert-laws.com/practice-jan-2019-css-animations/transform-style.html)
+
 
 ```css
 /* transform-style - either the values flat or preserve-3d */
