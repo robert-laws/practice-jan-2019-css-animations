@@ -25,5 +25,17 @@
       transform-origin: center center;
     }
   }
+
+  &.three {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    transition: all 3s ease-out 1s;
+  }
+  
+  &.three:hover {
+    opacity: 0.5;
+    transform: scale(1.25);
+  }
 }
 
