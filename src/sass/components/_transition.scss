@@ -1,7 +1,7 @@
 .transition {
   &.one {
-    height: 15rem;
-    width: 15rem;
+    height: 10rem;
+    width: 10rem;
     align-self: flex-start;
     background-color: lighten($color-highlight, 1%);
     transition: background-color 1s ease-in;
@@ -12,8 +12,8 @@
   }
 
   &.two {
-    height: 15rem;
-    width: 15rem;
+    height: 10rem;
+    width: 10rem;
     background-color: lighten($color-highlight-2, 5%);
     transition-property: transform;
     transition-duration: 750ms;
@@ -36,6 +36,25 @@
   &.three:hover {
     opacity: 0.5;
     transform: scale(1.25);
+  }
+
+  &.four {
+    background-color: #ff0000;
+    transform: scale(1) rotate(0deg);
+    opacity: 1;
+    box-shadow: 3px 3px rgba(0, 0, 0, 0.1);
+    width: 100px;
+    height: 100px;
+    // transition: all 4s cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    transition: all 4s steps(10, start);
+  }
+
+  &.four:hover {
+    color: #000000;
+    border: 5px dashed #000000;
+    transform: scale(1.2) rotate(-10deg);
+    opacity: 0.5;
+    box-shadow: -3px -3px rgba(0, 0, 0, 0.5);
   }
 }
 
