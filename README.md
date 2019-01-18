@@ -144,10 +144,34 @@ div:hover {
 
 ## Keyframes
 
-basic code example(s)
+```css
+@keyframes fadeout {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
 
-link to code sample
+@keyframes grow {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+    background-color: red;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+```
 
 ## Animation
 
-animation
+```css
+div {
+  animation: grow 2s ease-in 0.2s infinite normal;
+}
+```
