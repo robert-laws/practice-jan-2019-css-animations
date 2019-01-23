@@ -8,6 +8,8 @@ Inspired by the Medium post - [A Guide to CSS Animation](https://codeburst.io/a-
 
 **Table of Contents**
 
+**Foundations**
+
 1. [Transform](#transform)
 
 1. [Transition](#tranisition)
@@ -15,6 +17,10 @@ Inspired by the Medium post - [A Guide to CSS Animation](https://codeburst.io/a-
 1. [Keyframes](#keyframes)
 
 1. [Animation](#animation)
+
+**In Action**
+
+1. Animation in action
 
 ---
 
