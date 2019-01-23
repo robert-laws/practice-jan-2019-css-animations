@@ -1,0 +1,34 @@
+.syntax-content {
+  width: 100%;
+
+  code {
+    margin: 0 5px;
+    padding: 2px 5px;
+    border-radius: 3px;
+    background-color: #EEE;
+  }
+
+  pre {
+    font-size: 1.8rem;
+    line-height: 1.4;
+    margin: 25px 5px;
+    padding: 10px;
+    border-radius: 7px;
+    border: 1px solid #BBB;
+    background-color: #EFEFEFAA;
+    overflow: hidden;
+  }
+
+  pre span {
+    padding: 2px 20px;
+    position: relative;
+    top: -10px;
+    left: -10px;
+    background-color: #047DD1;
+    border-radius: 7px 0 7px 0;
+    font-weight: bold;
+    font-size: 1.15em;
+    color: #FFF;
+  }
+}
+

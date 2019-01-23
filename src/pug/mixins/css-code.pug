@@ -1,0 +1,15 @@
+mixin formatCssCode(type, ...args)
+  pre
+    span= type
+    |
+    - var count = args.length - 1
+    each val, index in args      
+      if index == 0
+        |
+        |#{val}
+      else if index == count
+        |
+        |#{val}
+      else
+        |
+        |   #{val}
