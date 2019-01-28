@@ -12,7 +12,7 @@ Inspired by the Medium post - [A Guide to CSS Animation](https://codeburst.io/a-
 
 1. [Transform](#transform)
 
-1. [Transition](#tranisition)
+1. [Transition](#transition)
 
 1. [Keyframes](#keyframes)
 
@@ -131,7 +131,8 @@ div {
 
 ## Transition
 
-**Transition** - 
+**Transition** - [Sass Code Page](/src/sass/components/_transition.scss) & [Online Example](https://robert-laws.com/practice-jan-2019-css-animations/transition.html)
+
 
 ```css
 /* transitions are applied to elements using transition properties */
@@ -149,6 +150,8 @@ div:hover {
 ```
 
 ## Keyframes
+
+**Keyframes** - [Sass Code Page](/src/sass/components/_keyframes.scss) & [Online Example](https://robert-laws.com/practice-jan-2019-css-animations/keyframes.html)
 
 ```css
 @keyframes fadeout {
@@ -175,6 +178,8 @@ div:hover {
 ```
 
 ## Animation
+
+**Keyframes** - [Sass Code Page](/src/sass/components/_animation.scss) & [Online Example](https://robert-laws.com/practice-jan-2019-css-animations/animation.html)
 
 ```css
 div {

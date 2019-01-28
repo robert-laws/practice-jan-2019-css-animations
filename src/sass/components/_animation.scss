@@ -1,0 +1,170 @@
+.animation {
+  &.one {
+    height: 5rem;
+    width: 5rem;
+    background-color: lighten($color-highlight, 17%);
+    border-radius: 10rem;
+    
+    position: absolute;
+    top: 10rem;
+    left: 10rem;
+
+    animation-name: squarePath;
+    animation-duration: 4s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(.95,.05,.06,.95);
+    animation-play-state: paused;
+  }
+
+  :checked ~ &.one {
+    animation-play-state: running;
+  }
+}
+
+.animation {
+  &.two {
+    height: 10rem;
+    width: 10rem;
+    background-color: lighten($color-highlight-2, 17%);
+
+    position: absolute;
+    top: 20rem;
+    left: 30rem;
+
+    animation: spin 1s linear 0s infinite normal, fade 2s linear 1s 1 normal;
+  }
+}
+
+.animation {
+  &.three {
+    height: 10rem;
+    width: 10rem;
+    background-color: lighten($color-highlight-3, 7%);
+
+    position: absolute;
+    top: 20rem;
+    left: 70rem;
+
+    animation: grow 2s linear 0s 1 normal forwards;
+  }
+}
+
+.animation {
+  &.four {
+    height: 10rem;
+    width: 10rem;
+    background-color: darken($color-highlight-2, 7%);
+
+    position: absolute;
+    top: 30rem;
+    left: 90rem;
+
+    animation-name: grow;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+  }
+}
+
+.animation {
+  &.five {
+    height: 10rem;
+    width: 10rem;
+
+    position: absolute;
+    top: 50rem;
+    left: 60rem;
+
+    div.container {
+      border: 5px solid #F00;
+      border-top: transparent;
+      height: 100%;
+      overflow: hidden;
+
+      div.fill {
+        height: 100%;
+        background-color: #0F0;
+        transform: translateY(8.5rem);
+
+        animation: fill 3s;
+        animation-iteration-count: infinite;
+        animation-timing-function: cubic-bezier(.95,.05,.06,.95);
+        animation-direction: alternate-reverse;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        transition: background-color;
+        transition-duration: 2s;
+
+        &:hover {
+          background-color: #FF0;
+        }
+      }
+    }
+  }
+}
+
+@keyframes squarePath {
+  0% {
+    transform: translate(0%, 0%);
+  }
+  25% {
+    transform: translate(0rem, 40rem);
+  }
+  50% {
+    transform: translate(40rem, 40rem);
+  }
+  75% {
+    transform: translate(40rem, 0rem);
+  }
+  100% {
+    transform: translate(0%, 0%);
+  }
+}
+
+@keyframes spin {
+  0%, 50% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes grow {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.25);
+  }
+  70% {
+    transform: scale(1.1);
+  }
+  75% {
+    transform: scale(1.15);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes fill {
+  0% {
+    transform: translateY(0rem);
+  }
+  100% {
+    transform: translateY(9rem);
+  }
+}
